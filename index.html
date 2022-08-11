@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="">
+  <title>Neo Guru</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+   
+   
+  </style>
+
+</head>
+
+<body>
+
+  <!---NAVBAR-->
+
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+    <i class="bi bi-list navbar-brand" style="color: #000261;font-size: 25px;"></i>
+    <a class="logo" href="home.html"> <img src="Images/logo.png" alt=""> </a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Menu Item 1 </a>
+      </li>&ensp;
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Menu Item 2 </a>
+      </li>&ensp;
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Menu Item 3 </a>
+      </li>&ensp;
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Menu Item 4 </a>
+      </li>
+    </ul>
+
+    <!---Search Bar-->
+
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" style="width:450px;">
+      <i class="bi bi-search" style="position: absolute;margin-right:1%;margin-left:1%;color:#000000">&ensp; Search
+        Here</i>
+    </form>
+    <i class="bi bi-person-circle" style=" margin-left:1%;color: #093dacc9;font-size: 30px;"></i>
+  </nav>
+
+  <!--- Alerts--->
+
+  <div id="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong> You have received 5 Projects from the administrator.</strong>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+
+
+  <h1 style="font-size:30px;">PROJECTS</h1>
+
+
+  
+  <div class="cardlogo">
+  <img src="/Images/open.png" alt="">
+  <img src="/Images/In Progress.png" alt="">
+  <img src="/Images/close.png" alt="">
+</div>
+  <!---Dropdown-->
+
+  
+
+  <div class="dropdown1" style="margin: 50;">
+    <h6>Sort By</h6>
+    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+      New
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Top</a>
+      <a class="dropdown-item" href="#">High</a>
+      <a class="dropdown-item" href="#">Low</a>
+    </div>
+    
+    <!---button add item-->
+    <button type="button" class="btn btn-primary"></button>
+  </div>
+
+
+  <!--- SideBar List---->
+
+  <div class="list-group" style="width:240px;margin-top: -8%;">
+    <a href="index.html" class="list-group-item list-group-item-action"
+      style="background: #7696befa 0% 0% no-repeat padding-box;color:#000000;border:none">
+      <strong><i class="bi bi-search"></i>&ensp; Projects</strong>
+    </a>
+    <a href="course.html" class="list-group-item list-group-item-action" style="border:none blanchedalmond"><i class="bi bi-moisture"></i>
+      &ensp;Courses</a>
+    <a href="ProblemStat.html" class="list-group-item list-group-item-action" style="border:none"><i class="bi bi-cast"></i>
+      &ensp;Problem Statement</a>
+    <a href="task.html" class="list-group-item list-group-item-action" style="border:none"><i
+        class="bi bi-list-task"></i> &ensp;Tasks</a>
+    <a href="Lab.html" class="list-group-item list-group-item-action" style="border:none"><i class="bi bi-bookmark"></i>
+      &ensp;Labs</a>
+    <a href="Assets.html" class="list-group-item list-group-item-action" style="border:none"><i class="bi bi-briefcase"></i>
+      &ensp;Assets</a>
+    <a href="Setting.html" class="list-group-item list-group-item-action" style="border:none"><i class="bi bi-gear"></i>
+      &ensp;Settings</a>
+  </div>
+
+<br>
+<br>
+<!---Table--->
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Project Title<i class="fa fa-angle-double-down"></i></th>
+
+        <th scope="col">Details</th>
+        <th scope="col">Start Date</th>
+        <th scope="col">Estimate Start Date<i class="fa fa-angle-double-down"></i></th>
+        <th scope="col">Status</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"><a href="url "><u> Monitoring of CNC Machines</a></th>
+        <td>Stock Photography Agency</td>
+        <td>31-01-31</td>
+        <td>01-01-31</td>
+        <td><button type="button" class="btn btn-outline-danger btn-sm">Open</button></td>
+        <td>
+
+          <div class="dropdown">
+            <button type="button"  data-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i><span
+                class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#consumergoods" data-toggle="modal">View Project </a></li>
+              <li><a href="#consumergoods2" data-toggle="modal">Problem Stat</a></li>
+              <li><a href="#consumergoods3" data-toggle="modal">Assign Task</a></li>
+              <li><a href="#consumergoods4" data-toggle="modal">View Assets</a></li>
+              <li><a href="#consumergoods4" data-toggle="modal">View Lab</a></li>
+            </ul>
+          </div>
+          <div class="modal fade" id="consumergoods" data-target="#consumergoods">
+            <div class="modal-dialog">
+              <div class="modal-content" style="height:650px; width:795px; ">
+                <div class="modal-header orange" style="position: relative; left: -150px; color: rgb(0, 0, 0); font-weight: 550;"  aria-hidden="true">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span>
+
+                    </button>
+                    <form >
+                      
+                      <h2 style="color:blue; font-size: 25px;">Project Details</h2><br>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">Project Name</label>
+                      <input type="email" class="form-control" id="inputEmail4" placeholder="Customer Design">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Project Details</label>
+                      <input type="password" class="form-control" id="inputPassword4" placeholder="Customer Design">
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">Project Type</label>
+                      <input type="email" class="form-control" id="inputEmail4" placeholder="Business">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Project Owner</label>
+                      <input type="password" class="form-control" id="inputPassword4" placeholder="John Amit Philips">
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">Estimate Start Date</label>
+                      <input type="email" class="form-control" id="inputEmail4" placeholder="20-2-2">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Estimate End Date</label>
+                      <input type="password" class="form-control" id="inputPassword4" placeholder="19-3-2021">
+                    </div>
+                  </div>
+
+
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">Actual Start Date</label>
+                      <input type="email" class="form-control" id="inputEmail4" placeholder="01-3-2021">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Actual End Date</label>
+                      <input type="password" class="form-control" id="inputPassword4" placeholder="31-3-2021">
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">Project Members</label>
+                      <input type="email" class="form-control" id="inputEmail4" placeholder="8">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Status</label>
+                      <input type="password" class="form-control" id="" placeholder="Open">
+                    </div>
+                  </div>
+
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                    <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                    <div class="invalid-feedback">Example invalid custom file feedback</div>
+                  </div>
+                             
+                 </form>
+            
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="consumergoods2" data-target="#consumergoods2">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header orange">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span>
+
+                  </button>
+                  <h4 class="modal-title"></h4>
+                  <p>
+                              
+                    
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="consumergoods3" data-target="#consumergoods3">
+            <div class="modal-dialog">
+              <div class="modal-content" style="height:750px; width:495px; border: 1px solid rgb(77, 74, 74);">
+                <div class="modal-header orange" style="margin:-10px -40px -20px; width: 500px; " >
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span>
+
+                  </button>
+                  <h6 class="modal-title"></h6>
+                  <div class="card">
+                        <div class="card-body" style="font-weight: 550">
+                          <!-- <h4 class="card-title">Add problem Statement</h4> -->
+                          <h2 style="color: blue">Assign Task</h2>
+                          <form class="forms-sample">
+                            <div class="form-group">
+                              
+                              <label for="exampleInputUsername1">Task Name</label>
+                              <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Type here">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Assign To</label>
+                              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Select" aria-placeholder="">
+                                    
+                             </div>
+                            
+
+                                <label for="exampleInputUsername1">Assigned Task</label><table class="table5">
+                                  
+                                  <thead>
+                                    <tr>
+                                      <th scope="col"></th>
+                                      <th scope="col">Task Name</th>
+                                      <th scope="col">Assigned Date</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row"></th>
+                                      <td>Course Management</td>
+                                      <td>01-01-21</td>
+                                      <td><i class="bi bi-trash"></i></td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row"></th>
+                                      <td>Business admin Management</td>
+                                      <td>15-01-21</td>
+                                      <td><i class="bi bi-trash"></i></td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row"></th>
+                                      <td>Marketing Management</td>
+                                      <td>16-01-21</td>
+                                      <td><i class="bi bi-trash"></i></td>
+                                    </tr>
+
+                                  </tbody>
+
+                                </table>
+                                <h4 style="font-size: 16px; margin-top: 25px;">Attachment</h4>
+                                <form action="/action_page.php">
+                                  <input type="file" id="myFile" name="filename">
+                                  
+                                </form>
+                             
+                             <button></button>
+                              </div>
+                              <br>
+                              
+                            
+                      </form></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="consumergoods4" data-target="#consumergoods4">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header orange">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span>
+
+                  </button>
+                  <h4 class="modal-title"><strong></strong>View Assets</h4>
+                  <p></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+
+      </tr>
+      <tr>
+        <th scope="row"><a href="url "><u>Preventive Maintainance of white Turbine</a></th>
+        <td>Stock Photography Agency</td>
+        <td>31-01-31</td>
+        <td>01-01-31</td>
+        <td><button type="button" class="btn btn-outline-primary btn-sm">In Progress</button></td>
+        <td>
+          <div class="dropdown">
+            <button type="button"  data-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i><span
+                class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#consumergoods" data-toggle="modal">View Project </a></li>
+              <li><a href="#consumergoods2" data-toggle="modal">Problem Stat</a></li>
+              <li><a href="#consumergoods3" data-toggle="modal">Assign Task</a></li>
+              <li><a href="#consumergoods4" data-toggle="modal">View Assets</a></li>
+              <li><a href="#consumergoods4" data-toggle="modal">View Lab</a></li>
+            </ul>
+          </div>
+          <div class="modal fade" id="consumergoods" data-target="#consumergoods">
+            <div class="modal-dialog">
+              <div class="modal-content">   
+                <div class="modal-header orange">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span>
+
+                  </button>
+                  <h4 class="modal-title"><strong></strong>View Project</h4>
+                  <p></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="consumergoods2" data-target="#consumergoods2">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header orange">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span>
+
+                  </button>
+                  <h4 class="modal-title"><strong></strong></h4>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="consumergoods3" data-target="#consumergoods3">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header orange">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span>
+
+                  </button>
+                  <h4 class="modal-title"><strong></strong></h4>
+                  <p></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="consumergoods4" data-target="#consumergoods4">
+            <div class="modal-dialog">
+              <div class="modal-content ">
+                <div class="modal-header orange">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span>
+
+                  </button>
+                  <h4 class="modal-title"><strong></strong>Taco Bell</h4>
+                  <p></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </td>
+
+      </tr>
+      <tr>
+        <th scope="row"> <a href=" url"> <u>Production Line Optimization of Textile </a></th>
+        <td>Stock Photography Agency</td>
+        <td>31-01-31 </td>
+        <td>01-01-31</td>
+        <td><button type="button" class="btn btn-outline-success btn-sm">Closed</button></td>
+        <td>
+          <div class="dropdown">
+            <button type="button"  data-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i><span
+                class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#consumergoods" data-toggle="modal">View Project</a></li>
+              <li><a href="#consumergoods2" data-toggle="modal">Problem Stat</a></li>
+              <li><a href="#consumergoods3" data-toggle="modal">Assign Task</a></li>
+              <li><a href="#consumergoods4" data-toggle="modal">View Assets</a></li>
+              <li><a href="#consumergoods4" data-toggle="modal">View Lab</a></li>
+            </ul>
+          </div>
+          <div class="modal fade" id="consumergoods" data-target="#consumergoods">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header orange">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span>
+
+                  </button>
+                  <h4 class="modal-title"><strong></strong></h4>
+                  <p>
+
+                           
+
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="consumergoods2" data-target="#consumergoods2">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header orange">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span>
+
+                  </button>
+                  <h4 class="modal-title"><strong></strong>McDonalds</h4>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="consumergoods3" data-target="#consumergoods3">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header orange">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span>
+
+                  </button>
+                  <h4 class="modal-title"><strong></strong></h4>
+                  <p></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="consumergoods4" data-target="#consumergoods4">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header orange">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span>
+
+                  </button>
+                  <h4 class="modal-title"><strong></strong></h4>
+                  <p></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <td>
+      </tr>
+      <tr>
+        <th scope="row"> <a href=" url"> <u>Plant Performance Monitoring using Digital</a></th>
+        <td>Stock Photography Agency</td>
+        <td>31-01-31</td>
+        <td>01-01-31</td>
+        <td><button type="button" class="btn btn-outline-danger btn-sm">Open</button></td>
+        <td>
+          <div class="dropdown">
+            <button type="button"  data-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i><span
+                class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#consumergoods" data-toggle="modal">View Project </a></li>
+              <li><a href="#consumergoods2" data-toggle="modal">Problem Statement</a></li>
+              <li><a href="#consumergoods3" data-toggle="modal">View Labs</a></li>
+              <li><a href="#consumergoods4" data-toggle="modal">View Assets</a></li>
+              <li><a href="#consumergoods5" data-toggle="modal">Assign Task</a></li>
+            </ul>
+          </div>
+          <div class="modal fade" id="consumergoods" data-target="#consumergoods">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header orange">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span>
+
+                  </button>
+                  <h4 class="modal-title"><strong></strong></h4>
+                  <p></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="consumergoods2" data-target="#consumergoods2">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header orange">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span>
+
+                  </button>
+                  <h4 class="modal-title"><strong></strong>McDonalds</h4>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="consumergoods3" data-target="#consumergoods3">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header orange">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span>
+
+                  </button>
+                  <h4 class="modal-title"><strong></strong></h4>
+                  <p> </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="consumergoods4" data-target="#consumergoods4">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header orange">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span>
+
+                  </button>
+                  <h4 class="modal-title"><strong></strong>Taco Bell</h4>
+                  <p></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </td>
+      </tr>
+      <tr>
+        <th scope="row"> <a href=" url"> <u>Predective analytics of windFarm </a></th>
+        <td>Stock Photography Agency</td>
+        <td>31-01-31</td>
+        <td>01-01-31</td>
+        <td><button type="button" class="btn btn-outline-danger btn-sm">Open</button></td>
+        <td>
+
+          <div class="dropdown">
+            <button type="button"  data-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i><span
+                class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#consumergoods" data-toggle="modal">View Project</a></li>
+              <li><a href="#consumergoods2" data-toggle="modal">Problem Stat</a></li>
+              <li><a href="#consumergoods3" data-toggle="modal">Assign Task</a></li>
+              <li><a href="#consumergoods4" data-toggle="modal">View Assets</a></li>
+              <li><a href="#consumergoods4" data-toggle="modal">View Lab</a></li>
+            </ul>
+          </div>
+          <div class="modal fade" id="consumergoods" data-target="#consumergoods">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header orange">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span>
+
+                  </button>
+                  <h4 class="modal-title"><strong></strong>AppleBees</h4>
+                  <p></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="consumergoods2" data-target="#consumergoods2">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header orange">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span>
+
+                  </button>
+                  <h4 class="modal-title"><strong></strong></h4>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="consumergoods3" data-target="#consumergoods3">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header orange">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span>
+
+                  </button>
+                  <h4 class="modal-title"><strong></strong></h4>
+                  <p></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="consumergoods4" data-target="#consumergoods4">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header orange">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span>
+
+                  </button>
+                  <h4 class="modal-title"><strong></strong></h4>
+                  <p></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </td>
+      </tr>
+      <tr>
+        <th scope="row"> <a href=" url"> <u>Quality Management using Computer Vision </a></th>
+        <td>Stock Photography Agency</td>
+        <td>31-01-31</td>
+        <td>01-01-31</td>
+        <td><button type="button" class="btn btn-outline-success btn-sm">Closed</button></td>
+        <td>
+          <div class="dropdown">
+            <button type="button" data-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i><span
+                class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#consumergoods" data-toggle="modal">View Project </a></li>
+              <li><a href="#consumergoods2" data-toggle="modal">Problem Stat</a></li>
+              <li><a href="#consumergoods3" data-toggle="modal">Assign Task</a></li>
+              <li><a href="#consumergoods4" data-toggle="modal">View Assets</a></li>
+              <li><a href="#consumergoods4" data-toggle="modal">View Lab</a></li>
+            </ul>
+          </div>
+          <div class="modal fade" id="consumergoods" data-target="#consumergoods">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header orange">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span>
+
+                  </button>
+                  <h4 class="modal-title"><strong></strong></h4>
+                  <p></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="consumergoods2" data-target="#consumergoods2">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header orange">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span>
+
+                  </button>
+                  <h4 class="modal-title"><strong></strong></h4>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="consumergoods3" data-target="#consumergoods3">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header orange">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span>
+
+                  </button>
+                  <h4 class="modal-title"><strong></strong></h4>
+                  <p></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="consumergoods4" data-target="#consumergoods4">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header orange">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span>
+
+                  </button>
+                  <h4 class="modal-title"><strong></strong>Taco Bell</h4>
+                  <p>\.</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </td>
+      </tr>
+      <tr>
+        <th scope="row"> <a href=" url"> <u>Intelligent Video analytics </a></th>
+        <td>Stock Photography Agency</td>
+        <td>31-01-31 </td>
+        <td>01-01-31</td>
+        <td><button type="button" class="btn btn-outline-primary btn-sm">In Progress</button></td>
+        <td>
+          <div class="dropdown">
+            <button type="button" data-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i><span
+                class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#consumergoods" data-toggle="modal">View Project</a></li>
+              <li><a href="#consumergoods2" data-toggle="modal">Problem Stat</a></li>
+              <li><a href="#consumergoods3" data-toggle="modal">Assign Task</a></li>
+              <li><a href="#consumergoods4" data-toggle="modal">View Assets</a></li>
+              <li><a href="#consumergoods4" data-toggle="modal">View Lab</a></li>
+            </ul>
+          </div>
+          <div class="modal fade" id="consumergoods" data-target="#consumergoods">
+            <div class="modal-dialog ">
+              <div class="modal-content">
+                <div class="modal-header ">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                     ">&times;</span>
+
+                  </button>
+                  <h4 class="modal-title"><strong></strong></h4>
+                  <p></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="consumergoods2" data-target="#consumergoods2">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header orange">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span>
+
+                  </button>
+                  <h4 class="modal-title"><strong></strong></h4>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="consumergoods3" data-target="#consumergoods3">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header orange">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span>
+
+                  </button>
+                  <h4 class="modal-title"><strong></strong></h4>
+                  <p>
+                    
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="consumergoods4" data-target="#consumergoods4">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header orange">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span>
+
+                  </button>
+                  <h4 class="modal-title"><strong></strong></h4>
+                  <p></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </td>
+      </tr>
+      <tr>
+        <th scope="row"><a href="url "><u> Monitoring of CNC Machines</a></th>
+        <td>Stock Photography Agency</td>
+        <td>31-01-31</td>
+        <td>01-01-31</td>
+        <td><button type="button" class="btn btn-outline-danger ">Open</button></td>
+        <div class="verticaldot">
+          <td>
+
+            <div class="dropdown">
+              <button type="button"  data-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i><span
+                  class="caret"></span></button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#consumergoods" data-toggle="modal">View Project</a></li>
+                <li><a href="#consumergoods2" data-toggle="modal">Problem Stat</a></li>
+                <li><a href="#consumergoods3" data-toggle="modal">Assign Task</a></li>
+                <li><a href="#consumergoods4" data-toggle="modal">View Assets</a></li>
+                <li><a href="#consumergoods4" data-toggle="modal">View Lab</a></li>
+              </ul>
+            </div>
+            <div class="modal fade" id="consumergoods" data-target="#consumergoods">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header orange">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span>
+
+                    </button>
+                    <h4 class="modal-title"><strong></strong></h4>
+                    <p>.</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="consumergoods2" data-target="#consumergoods2">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header orange">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span>
+
+                    </button>
+                    <h4 class="modal-title"><strong></strong></h4>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="consumergoods3" data-target="#consumergoods3">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header orange">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span>
+
+                    </button>
+                    <h4 class="modal-title"><strong></strong></h4>
+                    <p>.</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="consumergoods4" data-target="#consumergoods4">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header orange">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span>
+
+                    </button>
+                    <h4 class="modal-title"><strong></strong></h4>
+                    <p></p>
+
+                  </div>
+                </div>
+              </div>
+    </tbody>
+  </table>
+
+
+  <!----trial-->
+
+
+  
+
+  <!---Paging -->
+
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+        <span class="sr-only">Previous</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">4</a></li>
+    <li class="page-item"><a class="page-link" href="#">5</a></li>
+    <li class="page-item"><a class="page-link" href="#">6</a></li>
+    <li class="page-item"><a class="page-link" href="#">7</a></li>
+    <li class="page-item"><a class="page-link" href="#">8</a></li>
+
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+  </ul>
+
+  <div class="dropdown2">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+      aria-haspopup="true" aria-expanded="false">
+      10/Page
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">1</a>
+      <a class="dropdown-item" href="#">2</a>
+      <a class="dropdown-item" href="#">3</a>
+    </div>
+  </div>
+
+
+  <!-----trial-->
+
+
+
+
+  <div style="position:absolute;right:1%;width:1250px;top:0">
+    <div class="collapse" id="ViewCollapse1" sty>
+      <div class="card card-body">
+        <h4 style="color:#0C6CB3;">Add Project</h4><br>
+        <button style="border:none;display:flex;border:1px solid #000;white-space:nowrap;padding:1%" data-toggle="collapse" data-target="#ViewCollapse5">Project Details<i style="margin-left:88.5%" class="bi bi-chevron-down"></i></button><br>
+        <div class="collapse" id="ViewCollapse5" style="margin-bottom:1%;border:1px solid #000;padding:1%">
+          <div style="display:flex;">
+            <div style="width:625px;margin-right:25px">
+              <label class="lab">Project Name</label>
+              <input type="search" id="query" name="q" class="form-control inp" placeholder="Type Here"><br>
+              <label class="lab">Project Type </label>
+              <textarea class="form-control inp" id="message" rows="1" cols="1"
+                placeholder="Type Here "></textarea><br>
+                <label class="lab">Estimated Start Date</label>
+            <input type="date" class="form-control inp"><br>
+            <label class="lab">Actual Start Date</label>
+            <input type="date" class="form-control inp"><br>
+                <label class="lab"> Estimated Budget</label>
+                <input type="search" id="query" name="q" class="form-control inp" placeholder="Type Here"><br>
+                <label class="lab">Outcome </label>
+                <textarea class="form-control inp" id="message" rows="5" cols="5"
+                  placeholder="Type Here "></textarea><br>
+                
+            </div>
+            <div style="width:625px;margin-right:25px">
+              <label class="lab">Project Code</label>
+              <input type="search" id="query" name="q" class="form-control inp" placeholder="Type Here"><br>
+              <label class="lab">Status </label>
+              <textarea class="form-control inp" id="message" rows="1" cols="1"
+                placeholder="Type Here "></textarea><br>
+                <label class="lab">Project Description </label>
+                <textarea class="form-control inp" id="message" rows="5" cols="5"
+                  placeholder="Type Here "></textarea><br>
+                  <label class="lab">Estimated End Date</label>
+            <input type="date" class="form-control inp"><br>
+            <label class="lab">Actual End Date</label>
+            <input type="date" class="form-control inp"><br>
+            <label class="lab">Actual Budget</label>
+              <input type="search" id="query" name="q" class="form-control inp" placeholder="Type Here"><br>
+            </div>
+          </div>
+          <div style="display:flex;">
+            <button type="button" class="btn btn-style2" data-toggle="collapse" data-target="#ViewCollapse5">Cancel</button>
+            <button style="background:#fff;color:#0C6CB3;border-color: #0C6CB3;" type="button" class="btn btn-style1" data-toggle="collapse" data-target="#ViewCollapse5">Save</button>
+          </div>
+        </div>
+        <button style="border:none;display:flex;border:1px solid #000;white-space:nowrap;padding:1%" data-toggle="collapse" data-target="#ViewCollapse6">Project Contact<i style="margin-left:88%" class="bi bi-chevron-down"></i></button><br>
+        <div class="collapse" id="ViewCollapse6" style="margin-bottom:1%;border:1px solid #000;padding:1%">
+          <label class="lab">Add Contact</label>
+          <div style="width:500px">
+            <i class="bi bi-search" style="position: absolute;margin-top:0.5%;color:#999999;right:59%;"></i>
+            <input type="search" class="form-control inp" placeholder="Search">
+          </div>
+          <br>
+          <table class="table" style="border-left:1px solid;border-right:1px solid; border-color:#142E6E1A;margin-top:0px;">
+            <thead>
+                <tr>
+                    <th scope="col">Contact Name</th>
+                    <th scope="col" style="white-space: nowrap;">Contact Role</th>
+                    <th scope="col" style="white-space: nowrap;">Email</th>
+                    <th scope="col" style="white-space: nowrap;">Phone Number</th>
+                    <th scope="col" style="white-space: nowrap;">Actions</th>
+                    <th scope="col"> &emsp;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Patty O'Furniture</td>
+                    <td style="white-space: nowrap;">Corporate Administrator</td>
+                    <td>pofurniture@xyzcompany.com</td>
+                    <td>31-01-2021</td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="bi bi-three-dots-vertical" id="dropdownMenuButton" data-toggle="dropdown"></i>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-right:150px;border-color: #02AADA;">
+                          <a class="dropdown-item" href="#">Edit</a>
+                          <a class="dropdown-item" href="#">Copy</a>
+                          <a class="dropdown-item" href="#" >View</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                </tr>
+                <tr>
+                  <td> Olive Yew Aida Bugg</td>
+                  <td style="white-space: nowrap;">Business Administrator</td>
+                  <td>oliveyewaidabugg@xyzcompany.com</td>
+                  <td>14-02-2021</td>
+                  <td>
+                    <div class="dropdown">
+                      <i class="bi bi-three-dots-vertical" id="dropdownMenuButton" data-toggle="dropdown"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-right:150px;border-color: #02AADA;">
+                        <a class="dropdown-item" href="#">Edit</a>
+                        <a class="dropdown-item" href="#">Copy</a>
+                        <a class="dropdown-item" href="#" >View</a>
+                        <a class="dropdown-item" href="#">Delete</a>
+                      </div>
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <td>Maureen Biologist</td>
+                <td style="white-space: nowrap;">Technical Administrator</td>
+                <td>maureenbiologist@xyzcompany.com</td>
+                <td>15-02-2021</td>
+                <td>
+                  <div class="dropdown">
+                    <i class="bi bi-three-dots-vertical" id="dropdownMenuButton" data-toggle="dropdown"></i>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-right:150px;border-color: #02AADA;">
+                      <a class="dropdown-item" href="#">Edit</a>
+                      <a class="dropdown-item" href="#">Copy</a>
+                      <a class="dropdown-item" href="#" >View</a>
+                      <a class="dropdown-item" href="#">Delete</a>
+                    </div>
+                  </div>
+                </td>
+            </tr>
+            </tbody>
+          </table>
+          <div style="display:flex;">
+            <button type="button" class="btn btn-style2" data-toggle="collapse" data-target="#ViewCollapse6">Cancel</button>
+            <button style="background:#fff;color:#0C6CB3;border-color: #0C6CB3;" type="button" class="btn btn-style1" data-toggle="collapse" data-target="#ViewCollapse6">Save</button>
+          </div>
+        </div>
+        <button style="border:none;display:flex;border:1px solid #000;white-space:nowrap;padding:1%" data-toggle="collapse" data-target="#ViewCollapse7">Problem Statement<i style="margin-left:85.5%" class="bi bi-chevron-down"></i></button><br>
+        <div class="collapse" id="ViewCollapse7" style="margin-bottom:1%;border:1px solid #000;padding:1%">
+          <label class="lab">Assign Problem Statemnet</label>
+          <div style="width:500px">
+            <i class="bi bi-search" style="position: absolute;margin-top:0.5%;color:#999999;right:59%;"></i>
+            <input type="search" class="form-control inp" placeholder="Select">
+          </div>
+          <br>
+          <table class="table" style="border-left:1px solid;border-right:1px solid; border-color:#142E6E1A;margin-top:0px;">
+            <thead>
+                <tr>
+                    <th scope="col">Problem Statement Name</th>
+                    <th scope="col" style="white-space: nowrap;">Assigned Date</th>
+                    <th scope="col"> &emsp;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Course Management</td>
+                    <td style="white-space: nowrap;">01-01-2021</td>
+                    <td><i class="bi bi-trash3"></i></td>
+                    </td>
+                </tr>
+                <tr>
+                  <td>Business Admin</td>
+                  <td style="white-space: nowrap;">15-01-2021</td>
+                  <td><i class="bi bi-trash3"></i></td>
+              </tr>
+              <tr>
+                <td>Marketing</td>
+                <td style="white-space: nowrap;">16-01-2021</td>
+                <td><i class="bi bi-trash3"></i></td>
+            </tr>
+            </tbody>
+          </table>
+          <div style="display:flex;">
+            <button type="button" class="btn btn-style2" data-toggle="collapse" data-target="#ViewCollapse7">Cancel</button>
+            <button style="background:#fff;color:#0C6CB3;border-color: #0C6CB3;" type="button" class="btn btn-style1" data-toggle="collapse" data-target="#ViewCollapse7">Save</button>
+          </div>
+        </div>
+        <button style="border:none;display:flex;border:1px solid #000;white-space:nowrap;padding:1%" data-toggle="collapse" data-target="#ViewCollapse8">Labs<i style="margin-left:94.5%" class="bi bi-chevron-down"></i></button><br>
+        <div class="collapse" id="ViewCollapse8" style="margin-bottom:1%;border:1px solid #000;padding:1%">
+          <label class="lab">Add Lab</label>
+          <div style="width:500px">
+            <i class="bi bi-search" style="position: absolute;margin-top:0.5%;color:#999999;right:59%;"></i>
+            <input type="search" class="form-control inp" placeholder="Search">
+          </div>
+          <br>
+          <table class="table" style="border-left:1px solid;border-right:1px solid; border-color:#142E6E1A;margin-top:0px;">
+            <thead>
+                <tr>
+                    <th scope="col">Lab Name</th>
+                    <th scope="col" style="white-space: nowrap;">Start Date</th>
+                    <th scope="col" style="white-space: nowrap;">End Date</th>
+                    <th scope="col" style="white-space: nowrap;">Actions</th>
+                    <th scope="col"> &emsp;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Course Management</td>
+                    <td style="white-space: nowrap;">01-01-2021</td>
+                    <td  style="white-space: nowrap;">31-01-2021</td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="bi bi-three-dots-vertical" id="dropdownMenuButton" data-toggle="dropdown"></i>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-right:150px;border-color: #02AADA;">
+                          <a class="dropdown-item" href="#">Edit</a>
+                          <a class="dropdown-item" href="#">Copy</a>
+                          <a class="dropdown-item" href="#" >View</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                </tr>
+                <tr>
+                  <td>Business Admin Management</td>
+                  <td style="white-space: nowrap;">15-02-2021</td>
+                  <td  style="white-space: nowrap;">14-02-2021</td>
+                  <td>
+                    <div class="dropdown">
+                      <i class="bi bi-three-dots-vertical" id="dropdownMenuButton" data-toggle="dropdown"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-right:150px;border-color: #02AADA;">
+                        <a class="dropdown-item" href="#">Edit</a>
+                        <a class="dropdown-item" href="#">Copy</a>
+                        <a class="dropdown-item" href="#" >View</a>
+                        <a class="dropdown-item" href="#">Delete</a>
+                      </div>
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <td>Marketing Management</td>
+                <td style="white-space: nowrap;">16-02-2021</td>
+                <td style="white-space: nowrap;">15-02-2021</td>
+                <td>
+                  <div class="dropdown">
+                    <i class="bi bi-three-dots-vertical" id="dropdownMenuButton" data-toggle="dropdown"></i>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-right:150px;border-color: #02AADA;">
+                      <a class="dropdown-item" href="#">Edit</a>
+                      <a class="dropdown-item" href="#">Copy</a>
+                      <a class="dropdown-item" href="#" >View</a>
+                      <a class="dropdown-item" href="#">Delete</a>
+                    </div>
+                  </div>
+                </td>
+            </tr>
+            </tbody>
+          </table>
+          <div style="display:flex;">
+            <button type="button" class="btn btn-style2" data-toggle="collapse" data-target="#ViewCollapse8">Cancel</button>
+            <button style="background:#fff;color:#0C6CB3;border-color: #0C6CB3;" type="button" class="btn btn-style1" data-toggle="collapse" data-target="#ViewCollapse8">Save</button>
+          </div>
+        </div>
+        <button style="border:none;display:flex;border:1px solid #000;white-space:nowrap;padding:1%" data-toggle="collapse" data-target="#ViewCollapse9">Assets<i style="margin-left:93.5%" class="bi bi-chevron-down"></i></button><br>
+        <div class="collapse" id="ViewCollapse9" style="margin-bottom:1%;border:1px solid #000;padding:1%">
+          <label class="lab">Assign Asset</label>
+          <div style="width:500px">
+            <i class="bi bi-search" style="position: absolute;margin-top:0.5%;color:#999999;right:59%;"></i>
+            <input type="search" class="form-control inp" placeholder="Search">
+          </div>
+          <br>
+          <table class="table" style="border-left:1px solid;border-right:1px solid; border-color:#142E6E1A;margin-top:0px;">
+            <thead>
+                <tr>
+                    <th scope="col">Lab Name</th>
+                    <th scope="col" style="white-space: nowrap;">Asset Type</th>
+                    <th scope="col" style="white-space: nowrap;">Asset Name</th>
+                    <th scope="col" style="white-space: nowrap;">Uploaded Date</th>
+                    <th scope="col" style="white-space: nowrap;">Uploaded By</th>
+                    <th scope="col" style="white-space: nowrap;">Actions</th>
+                    <th scope="col"> &emsp;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="white-space: nowrap;">Course Management</td>
+                    <td style="white-space: nowrap;">Course Management</td>
+                    <td style="white-space: nowrap;">Course Management</td>
+                    <td style="white-space: nowrap;">01-01-2021</td>
+                    <td style="white-space: nowrap;">John Amit Philips</td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="bi bi-three-dots-vertical" id="dropdownMenuButton" data-toggle="dropdown"></i>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-right:150px;border-color: #02AADA;">
+                          <a class="dropdown-item" href="#">Edit</a>
+                          <a class="dropdown-item" href="#">Copy</a>
+                          <a class="dropdown-item" href="#" >View</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                </tr>
+                <tr>
+                  <td>Business Admin Mareting</td>
+                  <td style="white-space: nowrap;">Business Admin Mareting</td>
+                  <td style="white-space: nowrap;">Business Admin Mareting</td>
+                  <td style="white-space: nowrap;">15-01-2021</td>
+                  <td style="white-space: nowrap;">Paddy O' Furniture</td>
+                  <td>
+                    <div class="dropdown">
+                      <i class="bi bi-three-dots-vertical" id="dropdownMenuButton" data-toggle="dropdown"></i>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-right:150px;border-color: #02AADA;">
+                        <a class="dropdown-item" href="#">Edit</a>
+                        <a class="dropdown-item" href="#">Copy</a>
+                        <a class="dropdown-item" href="#" >View</a>
+                        <a class="dropdown-item" href="#">Delete</a>
+                      </div>
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <td>Marketing Management</td>
+                <td style="white-space: nowrap;">Marketing Management</td>
+                <td style="white-space: nowrap;">Marketing Management</td>
+                <td style="white-space: nowrap;">16-01-2021</td>
+                <td style="white-space: nowrap;">Maureen Biologist</td>
+                <td>
+                  <div class="dropdown">
+                    <i class="bi bi-three-dots-vertical" id="dropdownMenuButton" data-toggle="dropdown"></i>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-right:150px;border-color: #02AADA;">
+                      <a class="dropdown-item" href="#">Edit</a>
+                      <a class="dropdown-item" href="#">Copy</a>
+                      <a class="dropdown-item" href="#" >View</a>
+                      <a class="dropdown-item" href="#">Delete</a>
+                    </div>
+                  </div>
+                </td>
+            </tr>
+            </tbody>
+          </table>
+          <div style="display:flex;">
+            <button type="button" class="btn btn-style2" data-toggle="collapse" data-target="#ViewCollapse9">Cancel</button>
+            <button style="background:#fff;color:#0C6CB3;border-color: #0C6CB3;" type="button" class="btn btn-style1" data-toggle="collapse" data-target="#ViewCollapse9">Save</button>
+          </div>
+        </div>
+        <div style="display:flex;margin-top: 100px;border-top:1px solid #C5C5C5;">
+          <button style="margin-top:1%" type="button" class="btn btn-style2" data-toggle="collapse" data-target="#ViewCollapse1">Close</button>
+          <button style="margin-top:1%" type="button" class="btn btn-style1" data-toggle="collapse" data-target="#ViewCollapse1
+          ">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!---sample sropdown test-->
+
+
+
+
+  <script>
+            $("#selectbox").change(function () {
+    if ($(this).val() == "#consumergoods") {
+        $('#consumergoods').modal('show');
+      }
+    if ($(this).val() == "#consumergoods2") {
+        $('#consumergoods2').modal('show');
+      }
+    if ($(this).val() == "#consumergoods3") {
+        $('#consumergoods3').modal('show');
+      }
+    if ($(this).val() == "#consumergoods4") {
+        $('#consumergoods4').modal('show');
+      }
+ });
+  </script>
+
+</body>
+
+</html>

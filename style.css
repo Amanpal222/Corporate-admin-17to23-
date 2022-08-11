@@ -1,0 +1,245 @@
+@media (min-width: 1200px) {
+  .modal-xlg {
+     width: 90%; 
+  }
+}
+
+*{
+    box-sizing: border-box;
+
+}
+
+.nav-item a{
+  font-weight: 500;
+  font-size: 16px;
+  font-display: 2px;
+  color: black;
+
+}
+
+
+
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+body {
+  font-family: 'Varela Round', sans-serif;
+    background: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+}
+h1{
+    text-align: left;
+    padding-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.nav-link{
+    font-size: 15px;
+    color: rgb(90, 10, 10);
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    left: 75px;
+}
+
+#alert{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 15px;
+
+}
+
+.logo img{
+
+  position: relative;
+  left: 10px;
+  top: -4px;
+}
+
+
+
+h1{
+   
+    position: relative;
+    bottom: 40px;
+    left: 300px;
+    top: 40px;
+    font-size: 25px;
+}   
+
+.dropdown1{
+    float: right;
+    position: relative;
+    bottom: 30px;
+    right: 50px;
+    width: 200px;
+    height: inherit;
+    height: 20px;
+    font-size: smaller;
+    
+}
+
+h6{
+    position: relative;
+    top: 35px;
+    right: 60px;
+}
+
+img{
+    position: relative;
+    top: 40px;
+    left:300px;
+}
+
+
+.table{
+    font-size: 15px;
+width: fit-content;
+    margin-top: 100px;
+    margin-bottom: 0px;
+  position: relative;
+   bottom: 290px;
+   left: 250px
+   
+  
+   
+}
+
+tr th u{
+    font-size: smaller;
+}
+
+.page-item {
+  font-size: large;
+  padding: 0px;
+  margin-left: 0px;
+  position: relative;
+  bottom: 150px;
+  left: 500px;
+  color: rgb(235, 17, 17);
+
+}
+
+.page-link{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.btn-primary{
+     font-size: 10px;
+     position: relative;
+     left: 20px;
+}
+
+.dropdown-menu{
+    font-size: 18px;
+}
+
+.btn-secondary{
+position: relative;
+left: 1150px;
+bottom: 205px;
+    font-size: smaller;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.btn-primary{
+    font-size: small;
+    position: relative;
+    bottom: 1072px;
+    left: 820px;
+}
+
+.table5{
+ font-size: smaller;   
+ text-align: justify;
+ background-color: rgb(240, 230, 230);
+ border-radius: 2px solid black;
+}
+/*  sample */
+
+
+
+
+
+
+
+
+
+
+
+
+button {     
+  
+  text-decoration:none; 
+
+  text-transform: uppercase;
+  border: none;
+  font-family:arial, helvetica, sans-serif; 
+  font-size: 17px;
+  
+  font-weight:bold;
+  margin-top: 30px;
+}
+button.dropdown-toggle { 
+  float: none;
+  background: none;
+  color: rgb(0, 0, 0);
+  text-shadow: none;
+
+  padding: 0px 10px 12px 18px;
+}
+
+#dropdownMenuButton{
+  font-size: small;
+  margin-top: -8px;
+  border: 1px solid black;
+  width: 90px;
+  height: 25px;
+}
+
+.dropdown-menu a{
+font-weight: 450;
+ font-style: normal;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.dropdown1 h6{
+  margin-top:30px;
+}
+
+.dropdown-menu{
+font-size: small;
+  padding: 0px;
+  margin-left: 0px;
+  border-color: rgb(0, 0, 0);
+}
+
+#alert .close{
+  margin-top: 0px;
+  color: black;
+}
+
+#alert{
+  font-size: smaller;
+  margin: 15px 15px 15px 15px;
+  border: 1px solid rgb(16, 212, 75);
+}
+
+
+.cardlogo img{
+  border-collapse: collapse;
+
+  width: 305px;
+  margin-bottom: 45px;
+  border: 1px solid rgb(73, 66, 177)
+  
+  
+
+}
+
